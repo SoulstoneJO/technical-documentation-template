@@ -20,6 +20,7 @@ module.exports = {
     themeConfig: {
         locales: {
             '/': {
+                sidebar: 'auto',
                 selectText: '言語選択',
                 label: '日本語',
                 ariaLabel: '言語',
@@ -30,18 +31,14 @@ module.exports = {
                         buttonText: "Refresh"
                     }
                 },
-                algolia: {},
                 nav: [
                     { text: 'ホームページ', link: '/' },
                     { text: 'マニュアル', link: '/manual/' },
                     { text: 'データプロセス', link: '/data/' }
                 ],
-                sidebar: {
-                    '/': [/* ... */],
-                    '/nested/': [/* ... */]
-                }
             },
             '/ch/': {
+                sidebar: 'auto',
                 // 多语言下拉菜单的标题
                 selectText: '选择语言',
                 // 该语言在下拉菜单中的标签
@@ -55,17 +52,11 @@ module.exports = {
                         buttonText: "刷新"
                     }
                 },
-                // 当前 locale 的 algolia docsearch 选项
-                algolia: {},
                 nav: [
                     { text: '首页', link: '/ch/' },
                     { text: '用户手册', link: '/ch/manual/' },
                     { text: '数据追踪', link: '/ch/data/' }
                 ],
-                sidebar: {
-                    '/ch/': [/* ... */],
-                    '/ch/nested/': [/* ... */]
-                }
             }
         }
     }
